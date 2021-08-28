@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'chats.dart';
 import 'status.dart';
 import 'calls.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -17,7 +18,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  // int index = 1;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -62,14 +62,14 @@ class MyHomePage extends StatelessWidget {
             Calls(),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Color(0xff00af9b),
-          child: Icon(
-            Icons.message,
-            color: Colors.white,
-          ),
-        ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {},
+        //   backgroundColor: Color(0xff00af9b),
+        //   child: Icon(
+        //     Icons.message,
+        //     color: Colors.white,
+        //   ),
+        // ),
       ),
     );
   }

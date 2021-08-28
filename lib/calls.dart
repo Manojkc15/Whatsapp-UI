@@ -64,6 +64,14 @@ class Calls extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Color(0xff00af9b),
+        child: Icon(
+          Icons.add_call,
+          color: Colors.white,
+        ),
+      ),
     );
   }
 }
