@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'chats.dart';
 import 'status.dart';
+import 'calls.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,9 +17,11 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  // int index = 1;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
+      initialIndex: 1,
       length: 4,
       child: Scaffold(
         appBar: AppBar(
@@ -42,6 +45,9 @@ class MyHomePage extends StatelessWidget {
           bottom: TabBar(
             tabs: [
               Tab(icon: Icon(Icons.camera_alt)),
+              // Tab(child: Text('CHATS',style: TextStyle(color: index==1? Colors.amber : Colors.white),),),
+              // Tab(child: Text('STATUS',style: TextStyle(color: index==2? Colors.amber : Colors.white),),),
+              // Tab(child: Text('CALLS',style: TextStyle(color: index==3? Colors.amber : Colors.white),),),
               Tab(text: 'CHATS'),
               Tab(text: 'STATUS'),
               Tab(text: 'CALLS'),
@@ -53,7 +59,7 @@ class MyHomePage extends StatelessWidget {
             Icon(Icons.camera_alt),
             Chats(),
             Status(),
-            Icon(Icons.call),
+            Calls(),
           ],
         ),
         floatingActionButton: FloatingActionButton(
