@@ -58,8 +58,9 @@ class Status extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(left: 53.0, top: 40.0),
                 child: Icon(
-                  Icons.add_circle_outline,
+                  Icons.add_circle,
                   size: 30.0,
+                  color: Colors.green,
                 ),
               ),
             ],
