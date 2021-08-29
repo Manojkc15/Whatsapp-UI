@@ -56,11 +56,14 @@ class Status extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 53.0, top: 40.0),
-                child: Icon(
-                  Icons.add_circle,
-                  size: 30.0,
-                  color: Colors.green,
+                margin: EdgeInsets.only(left: 50.0, top: 45.0),
+                child: CircleAvatar(
+                  radius: 15.0,
+                  child: Icon(
+                    Icons.add_circle,
+                    size: 30.0,
+                    color: Color(0xff00af9b),
+                  ),
                 ),
               ),
             ],
