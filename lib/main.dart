@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'chats.dart';
+import 'chats/chats.dart';
 import 'status.dart';
 import 'calls/calls.dart';
 
