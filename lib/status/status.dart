@@ -97,20 +97,23 @@ class _StatusState extends State<Status> {
                 StatusCard(name: 'Ella Nunez', time: 'Yesterday, 10.57 pm'),
               ],
             ),
-            ExpansionTile(
-              textColor: Colors.grey[200],
-              collapsedIconColor: Color(0xff00af9b),
-              title: Text(
-                'Muted updates',
-                style: TextStyle(
-                  fontSize: 15.0,
-                  letterSpacing: 0.5,
+            Theme(
+              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+              child: ExpansionTile(
+                textColor: Colors.grey[200],
+                collapsedIconColor: Color(0xff00af9b),
+                title: Text(
+                  'Muted updates',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    letterSpacing: 0.5,
+                  ),
                 ),
+                children: [
+                  StatusCard(name: 'Lillian Harvey', time: '20 minitues ago'),
+                  StatusCard(name: 'Mike Fox', time: 'Today, 8 am'),
+                ],
               ),
-              children: [
-                StatusCard(name: 'Lillian Harvey', time: '20 minitues ago'),
-                StatusCard(name: 'Mike Fox', time: 'Today, 8 am'),
-              ],
             ),
           ],
         ),
