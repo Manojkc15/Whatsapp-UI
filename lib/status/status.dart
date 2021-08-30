@@ -120,15 +120,15 @@ class _StatusState extends State<Status> {
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          // FloatingActionButton(
-          //   onPressed: () {},
-          //   backgroundColor: Colors.grey[800],
-          //   child: Icon(
-          //     Icons.edit,
-          //     color: Colors.white,
-          //   ),
-          // ),
+        children: <Widget>[
+          FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: Colors.grey[800],
+            child: Icon(
+              Icons.edit,
+              color: Colors.white,
+            ),
+          ),
           SizedBox(height: 15.0),
           FloatingActionButton(
             onPressed: () {},
