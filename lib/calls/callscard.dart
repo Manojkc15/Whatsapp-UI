@@ -1,6 +1,21 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CallsCard extends StatelessWidget {
+  String name;
+  String time;
+  IconData icon;
+  Color color;
+  IconData iconType;
+
+  CallsCard({
+    required this.name,
+    required this.time,
+    required this.icon,
+    required this.color,
+    required this.iconType,
+  });
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -28,7 +43,7 @@ class CallsCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Name',
+                    '$name',
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.w500,
@@ -37,10 +52,13 @@ class CallsCard extends StatelessWidget {
                   SizedBox(height: 7.0),
                   Row(
                     children: [
-                      Icon(Icons.call_received, color: Colors.greenAccent[700]),
+                      Icon(
+                        icon,
+                        color: color,
+                      ),
                       SizedBox(width: 7.0),
                       Text(
-                        'Yesterday, 9.34 pm',
+                        '$time',
                         style: TextStyle(
                           fontSize: 16.5,
                           color: Colors.grey,
@@ -54,8 +72,8 @@ class CallsCard extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Icon(
-                Icons.call,
-                color: Colors.greenAccent[700],
+                iconType,
+                color: Color(0xff00af9b),
               ),
             ),
           ],

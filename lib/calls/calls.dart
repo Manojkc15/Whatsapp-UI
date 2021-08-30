@@ -8,7 +8,20 @@ class Calls extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          CallsCard(),
+          CallsCard(
+            name: 'David',
+            time: 'Today, 10.20 am',
+            icon: Icons.call_received,
+            color: Colors.greenAccent.shade400,
+            iconType: Icons.videocam_rounded,
+          ),
+          CallsCard(
+            name: 'Tim',
+            time: 'Yesterday, 6.20 pm',
+            icon: Icons.call_received,
+            color: Colors.redAccent.shade400,
+            iconType: Icons.call,
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
