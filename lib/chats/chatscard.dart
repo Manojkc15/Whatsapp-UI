@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class ChatsCard extends StatelessWidget {
 
-  String name;
-  String date;
+  final String name;
+  final String date;
 
   ChatsCard({required this.name,required this.date});
 

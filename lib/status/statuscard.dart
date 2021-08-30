@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CallsCard extends StatelessWidget {
+class StatusCard extends StatelessWidget {
   final String name;
   final String time;
-  final IconData icon;
-  final Color color;
-  final IconData iconType;
 
-  CallsCard({
+  StatusCard({
     required this.name,
     required this.time,
-    required this.icon,
-    required this.color,
-    required this.iconType,
   });
 
   @override
@@ -49,30 +43,14 @@ class CallsCard extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 7.0),
-                  Row(
-                    children: [
-                      Icon(
-                        icon,
-                        color: color,
-                      ),
-                      SizedBox(width: 7.0),
-                      Text(
-                        '$time',
-                        style: TextStyle(
-                          fontSize: 16.5,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    '$time',
+                    style: TextStyle(
+                      fontSize: 16.5,
+                      color: Colors.grey,
+                    ),
                   ),
                 ],
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                iconType,
-                color: Color(0xff00af9b),
               ),
             ),
           ],
