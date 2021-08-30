@@ -97,36 +97,16 @@ class _StatusState extends State<Status> {
                 StatusCard(name: 'Ella Nunez', time: 'Yesterday, 10.57 pm'),
               ],
             ),
-            InkWell(
-              onTap: () {
-                setState(() {
-                  tap = !tap;
-                });
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 15.0, top: 12.0, bottom: 10.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      flex: 7,
-                      child: Text(
-                        'Muted updates',
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: tap
-                          ? Icon(Icons.expand_more,color: Color(0xff00af9b))
-                          : Icon(Icons.expand_less,color: Color(0xff00af9b)),
-                    ),
-                  ],
+            ExpansionTile(
+              textColor: Colors.grey[200],
+              collapsedIconColor: Color(0xff00af9b),
+              title: Text(
+                'Muted updates',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  letterSpacing: 0.5,
                 ),
               ),
-            ),
-            Column(
               children: [
                 StatusCard(name: 'Lillian Harvey', time: '20 minitues ago'),
                 StatusCard(name: 'Mike Fox', time: 'Today, 8 am'),
@@ -138,14 +118,14 @@ class _StatusState extends State<Status> {
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.grey[800],
-            child: Icon(
-              Icons.edit,
-              color: Colors.white,
-            ),
-          ),
+          // FloatingActionButton(
+          //   onPressed: () {},
+          //   backgroundColor: Colors.grey[800],
+          //   child: Icon(
+          //     Icons.edit,
+          //     color: Colors.white,
+          //   ),
+          // ),
           SizedBox(height: 15.0),
           FloatingActionButton(
             onPressed: () {},
