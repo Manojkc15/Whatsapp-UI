@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'chats.dart';
 import 'status.dart';
-import 'calls.dart';
+import 'calls/calls.dart';
 
 void main() => runApp(MyApp());
 
@@ -45,9 +45,6 @@ class MyHomePage extends StatelessWidget {
           bottom: TabBar(
             tabs: [
               Tab(icon: Icon(Icons.camera_alt)),
-              // Tab(child: Text('CHATS',style: TextStyle(color: index==1? Colors.amber : Colors.white),),),
-              // Tab(child: Text('STATUS',style: TextStyle(color: index==2? Colors.amber : Colors.white),),),
-              // Tab(child: Text('CALLS',style: TextStyle(color: index==3? Colors.amber : Colors.white),),),
               Tab(text: 'CHATS'),
               Tab(text: 'STATUS'),
               Tab(text: 'CALLS'),
@@ -69,6 +66,20 @@ class MyHomePage extends StatelessWidget {
         //     Icons.message,
         //     color: Colors.white,
         //   ),
+        // ),
+
+        // body: CustomScrollView(
+        //   slivers: <Widget>[
+        //     SliverAppBar(
+        //       pinned: true,
+        //       snap: false,
+        //       floating: false,
+        //       expandedHeight: 120.0,
+        //       flexibleSpace: FlexibleSpaceBar(
+        //         title: Text('WhatsApp'),
+        //       ),
+        //     ),
+        //   ],
         // ),
       ),
     );
