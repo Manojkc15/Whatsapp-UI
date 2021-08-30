@@ -43,6 +43,9 @@ class MyHomePage extends StatelessWidget {
             ),
           ],
           bottom: TabBar(
+            indicatorColor: Color(0xff00af9b),
+            labelColor: Color(0xff00af9b),
+            unselectedLabelColor: Colors.grey[400],
             tabs: [
               Tab(icon: Icon(Icons.camera_alt)),
               Tab(text: 'CHATS'),
