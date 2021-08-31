@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
 class ChatsCard extends StatelessWidget {
-
+  final IconData profileIcon;
   final String name;
   final String date;
+  final bool pinIcon;
+  final bool muteIcon;
 
-  ChatsCard({required this.name,required this.date});
+  ChatsCard({
+    required this.profileIcon,
+    required this.name,
+    required this.date,
+    required this.pinIcon,
+    required this.muteIcon,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +27,7 @@ class ChatsCard extends StatelessWidget {
           children: [
             CircleAvatar(
               child: Icon(
-                Icons.person,
+                profileIcon,
                 size: 36.0,
                 color: Colors.white,
               ),
@@ -54,11 +62,19 @@ class ChatsCard extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     '$date',
                     style: TextStyle(fontSize: 13.5),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      if (pinIcon) Icon(Icons.push_pin),
+                      if (muteIcon) Icon(Icons.volume_mute),
+                    ],
                   ),
                 ],
               ),
