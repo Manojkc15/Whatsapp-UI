@@ -75,8 +75,16 @@ class ChatsCard extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      if (pinIcon) Icon(Icons.push_pin),
-                      if (muteIcon) Icon(Icons.volume_mute),
+                      if (pinIcon)
+                        Icon(
+                          Icons.push_pin,
+                          color: Colors.grey,
+                        ),
+                      if (muteIcon)
+                        Icon(
+                          Icons.volume_mute,
+                          color: Colors.grey,
+                        ),
                     ],
                   ),
                 ],
