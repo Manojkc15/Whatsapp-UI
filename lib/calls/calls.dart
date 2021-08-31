@@ -22,6 +22,13 @@ class Calls extends StatelessWidget {
             color: Colors.redAccent.shade400,
             iconType: Icons.call,
           ),
+          CallsCard(
+            name: 'Thomas',
+            time: 'Yesterday, 8.20 pm',
+            icon: Icons.call_made,
+            color: Colors.greenAccent.shade400,
+            iconType: Icons.call,
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(

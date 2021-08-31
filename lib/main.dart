@@ -36,10 +36,12 @@ class MyHomePage extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.search),
+              tooltip: 'Search',
             ),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.more_vert),
+              tooltip: 'More options',
             ),
           ],
           bottom: TabBar(

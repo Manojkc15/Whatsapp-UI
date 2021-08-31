@@ -26,11 +26,12 @@ class CallsCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CircleAvatar(
-              child: Icon(
-                Icons.person,
-                size: 36.0,
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.person,
+                size: 32.0,
                 color: Colors.white,
-              ),
+              ),),
               radius: 30.0,
               backgroundColor: Colors.blueGrey[300],
             ),

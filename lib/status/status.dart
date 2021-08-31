@@ -17,11 +17,11 @@ class _StatusState extends State<Status> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Stack(
-              children: [
-                InkWell(
-                  onTap: () {},
-                  child: Container(
+            InkWell(
+              onTap: () {},
+              child: Stack(
+                children: [
+                  Container(
                     height: 70.0,
                     margin: EdgeInsets.only(top: 12.0, left: 15.0),
                     child: Row(
@@ -64,19 +64,19 @@ class _StatusState extends State<Status> {
                       ],
                     ),
                   ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 50.0, top: 45.0),
-                  child: CircleAvatar(
-                    radius: 15.0,
-                    child: Icon(
-                      Icons.add_circle,
-                      size: 30.0,
-                      color: Color(0xff00af9b),
+                  Container(
+                    margin: EdgeInsets.only(left: 50.0, top: 45.0),
+                    child: CircleAvatar(
+                      radius: 15.0,
+                      child: Icon(
+                        Icons.add_circle,
+                        size: 30.0,
+                        color: Color(0xff00af9b),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Container(
               margin: EdgeInsets.only(left: 15.0, top: 12.0),
@@ -98,7 +98,8 @@ class _StatusState extends State<Status> {
               ],
             ),
             Theme(
-              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+              data:
+                  Theme.of(context).copyWith(dividerColor: Colors.transparent),
               child: ExpansionTile(
                 textColor: Colors.grey[200],
                 collapsedIconColor: Color(0xff00af9b),

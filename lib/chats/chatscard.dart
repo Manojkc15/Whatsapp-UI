@@ -26,10 +26,13 @@ class ChatsCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CircleAvatar(
-              child: Icon(
-                profileIcon,
-                size: 36.0,
-                color: Colors.white,
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  profileIcon,
+                  size: 32.0,
+                  color: Colors.white,
+                ),
               ),
               radius: 30.0,
               backgroundColor: Colors.blueGrey[300],
