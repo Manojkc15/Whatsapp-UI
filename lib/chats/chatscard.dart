@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// import 'package:whatsapp_ui/dialogBox.dart';
 class ChatsCard extends StatelessWidget {
   final IconData profileIcon;
   final String name;
@@ -27,7 +28,9 @@ class ChatsCard extends StatelessWidget {
           children: [
             CircleAvatar(
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  // DialogBox();
+                },
                 icon: Icon(
                   profileIcon,
                   size: 32.0,
