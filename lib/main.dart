@@ -64,28 +64,6 @@ class MyHomePage extends StatelessWidget {
             Calls(),
           ],
         ),
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: () {},
-        //   backgroundColor: Color(0xff00af9b),
-        //   child: Icon(
-        //     Icons.message,
-        //     color: Colors.white,
-        //   ),
-        // ),
-
-        // body: CustomScrollView(
-        //   slivers: <Widget>[
-        //     SliverAppBar(
-        //       pinned: true,
-        //       snap: false,
-        //       floating: false,
-        //       expandedHeight: 120.0,
-        //       flexibleSpace: FlexibleSpaceBar(
-        //         title: Text('WhatsApp'),
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }
